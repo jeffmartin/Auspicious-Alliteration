@@ -1,7 +1,8 @@
 var alliterative = true;
 var generatedNames = [];
 var dropCorpType = true;
-var seedNoun = 'Alliteration';
+var seedNoun = null;
+var numberToGenerate = 20;
 var adjectives = [
 'Amber', 
 'Blue', 
@@ -366,7 +367,7 @@ var nouns = [
 var corpTypes = ['Corp.', 'Ltd.', 'Corporation', 'Sarl', 'PLC', 'Limited', 'Incorporated', 'Inc.', 'LLP', 'LLC', 'Partners']
 
 var alliterativeAdjective = true;
-for(var i = 0; i<5; i++){
+for(var i = 0; i<=numberToGenerate; i++){
     alliterativeAdjective = (Math.random() >= 0.5);
     var adjective = adjectives[Math.floor(Math.random() * (adjectives.length-1))];
     var noun = '';
